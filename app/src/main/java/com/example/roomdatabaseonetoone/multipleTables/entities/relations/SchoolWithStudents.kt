@@ -4,7 +4,7 @@ import androidx.room.Embedded
 import androidx.room.Relation
 import com.example.roomdatabaseonetoone.multipleTables.entities.School
 import com.example.roomdatabaseonetoone.multipleTables.entities.Students
-//n to m relation
+//one to m relation
 data class SchoolWithStudents(
     @Embedded val school: School,
     @Relation(

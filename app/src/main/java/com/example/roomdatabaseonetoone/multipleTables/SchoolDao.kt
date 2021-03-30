@@ -23,7 +23,7 @@ interface SchoolDao {
     @Transaction
     @Query("SELECT * FROM school WHERE schoolName=:schoolName")
     suspend fun getSchoolAndDirectorWithSchoolName(schoolName: String): List<SchoolAndDirector>
-    //n to m relation
+    //one to m relation
     @Transaction
     @Query("SELECT * FROM school WHERE schoolName=:schoolName ")
     suspend fun getSchoolWithStudents(schoolName: String): List<SchoolWithStudents>
